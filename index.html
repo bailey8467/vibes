@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Life</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+            height: 90vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about {
+            background: #f4f4f4;
+        }
+
+        .spots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .spots {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#spots">Surf Spots</a>
+</nav>
+
+<header id="home">
+    <h1>Ride the Waves</h1>
+    <p>Experience the thrill of surfing</p>
+</header>
+
+<section id="about" class="about">
+    <h2>About Surfing</h2>
+    <p>Surfing is an exciting water sport where riders glide across ocean waves. It’s a lifestyle, a passion, and a connection with nature.</p>
+</section>
+
+<section id="spots">
+    <h2>Top Surf Spots</h2>
+    <div class="spots">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe" alt="Hawaii">
+            <h3>Hawaii</h3>
+            <p>Famous for big waves and legendary surf culture.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Australia">
+            <h3>Australia</h3>
+            <p>Beautiful beaches and consistent surf breaks.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="California">
+            <h3>California</h3>
+            <p>Iconic surf scene with waves for all levels.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Surf Life | Ride the Ocean 🌊</p>
+</footer>
+
+</body>
+</html>
