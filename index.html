@@ -16,6 +16,10 @@
             line-height: 1.6;
             color: #333;
         }
+        html {
+            scroll-behavior: smooth;
+        }
+        
 
         header {
             background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
@@ -56,6 +60,20 @@
         section {
             padding: 50px 20px;
             text-align: center;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #0077b6;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
 
         .about {
@@ -141,7 +159,15 @@
         </div>
     </div>
 </section>
-
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name"><br><br>
+        <input type="email" placeholder="Your Email"><br><br>
+        <textarea placeholder="Your Message"></textarea><br><br>
+        <button type="submit">Send (btw it dosent work)</button>
+    </form>
+</section>
 <footer>
     <p>© 2026 Surf Life | Ride the Ocean 🌊</p>
 </footer>
